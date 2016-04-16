@@ -1,20 +1,40 @@
-.seat-chart {
-  width: 90%;
-  margin: 0 auto;
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+}
+
+#reserved {
+  background-color: #99b3e6;
+  width: 120px;
+  min-height: 30px;
+  margin: 0;
+}
+
+#available {
+  background-color: #ffce99;
+  width: 120px;
+  min-height: 30px;
+  margin: 0;
 }
 
 .available {
-  background-color: green;
-  width: 24%;
-  margin: auto;
+  background-color: #ffce99;
+  width: 23%;
+  margin: 2.5px auto;
   min-height: 100px;
   display: inline-block;
 }
 
 .reserved {
-  background-color: red;
-  width: 24%;
-  margin: auto;
+  background-color: #99b3e6;
+  width: 23%;
+  margin: 2.5px auto;
   min-height: 100px;
   display: inline-block;
 }
+
+
