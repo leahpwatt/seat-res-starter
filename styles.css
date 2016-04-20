@@ -1,3 +1,7 @@
+/* the dark red colour in the logo is #742020 */
+/* the dark blue secondary colour is #21396B */
+/* the font colour is #EEF0F3 */
+
 h2 {
   text-align: center;
   font-weight: bold;
@@ -7,34 +11,39 @@ h3 {
   text-align: center;
 }
 
+
 #reserved {
-  background-color: #99b3e6;
+  background-color: #742020;
   width: 120px;
   min-height: 30px;
   margin: 0;
+  color: #EEF0F3;
 }
 
 #available {
-  background-color: #ffce99;
+  background-color: #21396B;
   width: 120px;
   min-height: 30px;
   margin: 0;
+  color: #EEF0F3;
 }
 
 .available {
-  background-color: #ffce99;
+  background-color: #21396B;
   width: 23%;
   margin: 2.5px auto;
   min-height: 100px;
   display: inline-block;
+  color: #EEF0F3;
 }
 
 .reserved {
-  background-color: #99b3e6;
+  background-color: #742020;
   width: 23%;
   margin: 2.5px auto;
   min-height: 100px;
   display: inline-block;
+  color: #EEF0F3;
 }
 
 fieldset {
@@ -42,7 +51,7 @@ fieldset {
   margin-top: 10px;
   margin-left: 32.5%;
   margin-bottom: 10px;
-  background-color: #ffce99;
+  background-color: #21396B;
   line-height: 1.6em;
 }
 .title {
@@ -68,17 +77,17 @@ input[type="text"] {
 }
 input[type="text"]:focus,
 input[type="text"]:hover {
-  background-color: #99b3e6;
+  background-color: #742020;
 }
 input[type="submit"] {
   width: 380px;
   height: 50px;
   margin-top: 1px;
   font-family: helvetica;
-  background: #99b3e6;
+  background: ##742020;
 }
 input[type="submit"]:hover {
-  background-color: #ffce99;
+  background-color: #21396B;
   text-align: center;
   cursor: pointer;
 }
@@ -87,4 +96,18 @@ input[type="submit"]:hover {
   padding-bottom: 10px;
   text-align: center;
 }
-
+.header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.greyish {
+  color: #EEF0F3;
+};
