@@ -14,8 +14,8 @@
   <p>Cupcake ipsum dolor sit amet. Donut topping croissant sesame snaps wafer marzipan cake sweet roll. Fruitcake caramels pudding jelly beans jelly apple pie. Bear claw candy brownie caramels halvah brownie powder. Fruitcake fruitcake sesame snaps candy canes bonbon donut chupa chups pastry. Gummi bears brownie topping tart gingerbread danish.</p>
 
   <section class="key">
-  	<h3 id="reserved">Reserved</h3>
-  	<h3 id="available">Available</h3>
+  	<h3 id="reservedkey">Reserved</h3>
+  	<h3 id="availablekey">Available</h3>
   </section>
 
   <section class="seat-chart">
@@ -39,29 +39,26 @@
     <div class="reserved"><h3>E1</h3></div>
     <div class="reserved"><h3>E2</h3></div>
     <div class="reserved"><h3>E3</h3></div>
-	  <div class="reserved"><h3>E4</h3></div>
+	<div class="reserved"><h3>E4</h3></div>
     <div class="available"><h3>F1</h3></div>
     <div class="available"><h3>F2</h3></div>
-    <div class="available"><h3>F3</h3></div>
-    <div class="available"><h3>F4</h3></div>
+    <div id="F3" class="available"><h3>F3</h3></div>
+    <div id="F4" class="available"><h3>F4</h3></div>
   </section>
-
-  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>
-
-  <form action="" method="get">
-    <fieldset class="greyish">
-      <legend>Contact LRP Theatre Co.</legend>
-        <p><label class="title" for="name">Your Name:</label></p>
-        <p><input type="text" name="name" id="name" required /></p>
-        <p><label class="title" for="email">Your E-mail:</label></p>
-        <p><input type="text" name="email" id="email" required></p>
-        <div>
-        <input type="submit" value="SUBMIT" />
-      </div>
-    </fieldset>
-  </form>
-
+  <div class="greyish">
+	   <form class="form" action="" method="get" id="form">
+	    <fieldset class="greyish">
+	      <legend>Contact LRP Theatre Co.</legend>
+	        <p><label class="title" for="name">Your Name:</label></p>
+	        <p><input type="text" name="name" id="nameInput" required /></p>
+	        <p><label class="title" for="email">Your E-mail:</label></p>
+	        <p><input type="text" name="email" id="email" required></p>
+	       	<button id="btn" type="button">SUBMIT</button>
+	    </fieldset>
+	  	</form>
+  </div>
   <footer class= "footer"> <img src="images/logolong.png" alt="some_text"> </footer>
+<script src="jquery-2.2.3.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

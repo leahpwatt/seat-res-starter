@@ -1,5 +1,5 @@
-/* the dark red colour in the logo is #742020 */
-/* the dark blue secondary colour is #21396B */
+/* the dark red colour (reserved) in the logo is #742020 */
+/* the dark blue (available ) secondary colour is #21396B */
 /* the font colour is #EEF0F3 */
 
 h2 {
@@ -11,7 +11,7 @@ h3 {
   text-align: center;
 }
 
-#reserved {
+#reservedkey {
   background-color: #742020;
   width: 120px;
   min-height: 30px;
@@ -19,7 +19,7 @@ h3 {
   color: #EEF0F3;
 }
 
-#available {
+#availablekey {
   background-color: #21396B;
   width: 120px;
   min-height: 30px;
@@ -86,7 +86,7 @@ input[type="text"]:hover {
   background-color: #742020;
 }
 
-input[type="submit"] {
+input[type="btn"] {
   width: 380px;
   height: 50px;
   margin-top: 1px;
@@ -94,13 +94,13 @@ input[type="submit"] {
   background: #742020;
 }
 
-input[type="submit"]:hover {
+input[type="btn"]:hover {
   background-color: #21396B;
   text-align: center;
   cursor: pointer;
 }
 
-.submit {
+#btn {
   width: 100px;
   padding-bottom: 10px;
   text-align: center;
@@ -122,5 +122,5 @@ input[type="submit"]:hover {
 
 .greyish {
   color: #EEF0F3;
+  display: none;
 };
-
