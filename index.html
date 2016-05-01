@@ -20,28 +20,28 @@
 
   <section class="seat-chart">
     <!-- This section will contain seats with one of two classes. Eventually, the divs will be generated with JavaScript! Keep this in mind when making decisions about the layout. -->
-    <div class="reserved"><h3>A1</h3></div>
-    <div class="reserved"><h3>A2</h3></div>
-    <div class="reserved"><h3>A3</h3></div>
-    <div class="available"><h3>A4</h3></div>
-    <div class="reserved"><h3>B1</h3></div>
-    <div class="available"><h3>B2</h3></div>
-    <div class="available"><h3>B3</h3></div>
-    <div class="reserved"><h3>B4</h3></div>
-    <div class="reserved"><h3>C1</h3></div>
-    <div class="reserved"><h3>C2</h3></div>
-    <div class="available"><h3>C3</h3></div>
-    <div class="available"><h3>C4</h3></div>
-    <div class="available"><h3>D1</h3></div>
-    <div class="reserved"><h3>D2</h3></div>
-    <div class="reserved"><h3>D3</h3></div>
-    <div class="available"><h3>D4</h3></div>
-    <div class="reserved"><h3>E1</h3></div>
-    <div class="reserved"><h3>E2</h3></div>
-    <div class="reserved"><h3>E3</h3></div>
-	<div class="reserved"><h3>E4</h3></div>
-    <div class="available"><h3>F1</h3></div>
-    <div class="available"><h3>F2</h3></div>
+    <div id="A1" class="reserved"><h3>A1</h3></div>
+    <div id="A2" class="reserved"><h3>A2</h3></div>
+    <div id="A3" class="reserved"><h3>A3</h3></div>
+    <div id="A4" class="available"><h3>A4</h3></div>
+    <div id="B1" class="reserved"><h3>B1</h3></div>
+    <div id="B2" class="available"><h3>B2</h3></div>
+    <div id="B3" class="available"><h3>B3</h3></div>
+    <div id="B4" class="reserved"><h3>B4</h3></div>
+    <div id="C1" class="reserved"><h3>C1</h3></div>
+    <div id="C2" class="reserved"><h3>C2</h3></div>
+    <div id="C3" class="available"><h3>C3</h3></div>
+    <div id="C4" class="available"><h3>C4</h3></div>
+    <div id="D1" class="available"><h3>D1</h3></div>
+    <div id="D2" class="reserved"><h3>D2</h3></div>
+    <div id="D3" class="reserved"><h3>D3</h3></div>
+    <div id="D4" class="available"><h3>D4</h3></div>
+    <div id="E1" class="reserved"><h3>E1</h3></div>
+    <div id="E2" class="reserved"><h3>E2</h3></div>
+    <div id="E3" class="reserved"><h3>E3</h3></div>
+	<div id="E4" class="reserved"><h3>E4</h3></div>
+    <div id="F1" class="available"><h3>F1</h3></div>
+    <div id="F2" class="available"><h3>F2</h3></div>
     <div id="F3" class="available"><h3>F3</h3></div>
     <div id="F4" class="available"><h3>F4</h3></div>
   </section>
@@ -53,6 +53,8 @@
 	        <p><input type="text" name="name" id="nameInput" required /></p>
 	        <p><label class="title" for="email">Your E-mail:</label></p>
 	        <p><input type="text" name="email" id="email" required></p>
+	        <p><label class="seat" for="text">Your seat number is:</label></p>
+	        <p id="seat"></p>
 	       	<button id="btn" type="button">SUBMIT</button>
 	    </fieldset>
 	  	</form>

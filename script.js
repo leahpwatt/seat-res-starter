@@ -1,18 +1,18 @@
 $(document).ready(function(){
-	var changeRes;
-	var nameInput = $("#nameInput").value;
+	var seatNum;
+	var selectSeat;
+	var yourName
 
 	$(".available").on("click", function(){
 		$(".greyish").show("slow");
-		console.log("This works!");
-		
+		selectSeat = $(this);
+		seatNum = $(this).attr("id");
+		$("#seat").text(seatNum);
 	});
 
 	$("#btn").on("click", function() {
-		$("#F4").removeClass("available").addClass("reserved");
-		$("#F4").text($("form").serialize());
-
-
+		yourName = $("input#nameInput").val();
+		$(selectSeat).removeClass("available").addClass("reserved").text("This seat is reserved for " + yourName + ".");
 	});
 
 });
