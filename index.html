@@ -11,7 +11,7 @@
 
   <header id="header-wrapper" class="header"> <img src="images/logolarge.png" alt="Header and Logo"> </header>
 
-  <p>Cupcake ipsum dolor sit amet. Donut topping croissant sesame snaps wafer marzipan cake sweet roll. Fruitcake caramels pudding jelly beans jelly apple pie. Bear claw candy brownie caramels halvah brownie powder. Fruitcake fruitcake sesame snaps candy canes bonbon donut chupa chups pastry. Gummi bears brownie topping tart gingerbread danish.</p>
+  <p id="description">Click on the seat you want to reserve. Enter your name and email address. You will receive confirmation within 24 hours, as well as a link to purchase your ticket.</p>
 
   <section class="key">
   	<h3 id="reservedkey">Reserved</h3>
@@ -49,12 +49,12 @@
 	   <form class="form" action="" method="get" id="form">
 	    <fieldset class="greyish">
 	      <legend>Contact LRP Theatre Co.</legend>
+	      	<p><label class="title" for="text">Your seat:</label></p>
+	        <p id="seat"></p>
 	        <p><label class="title" for="name">Your Name:</label></p>
 	        <p><input type="text" name="name" id="nameInput" required /></p>
 	        <p><label class="title" for="email">Your E-mail:</label></p>
 	        <p><input type="text" name="email" id="email" required></p>
-	        <p><label class="seat" for="text">Your seat number is:</label></p>
-	        <p id="seat"></p>
 	       	<button id="btn" type="button">SUBMIT</button>
 	    </fieldset>
 	  	</form>
