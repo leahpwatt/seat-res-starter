@@ -24,7 +24,16 @@ gulp.task("browser-sync", function() {
 			baseDir: "./"
 		}
 	});
-gulp.watch(["*.html", "./css/*.css", '*.js']).on('change', browsersync.reload);
+
+// gulp.watch(["*.html", '*.js', '*.styl'], ["gulp-stylus"]).on('change', browsersync.reload);
+
+//watch three files; any time they change, run gulp-stylus task; also, when something changes, call browsersync.reload
+//any time you change the gulpfile when you have a task running, cntrl C, then re-run task
+
 });
 
-
+gulp.task("serve", ["browser-sync"], function(){
+	gulp.watch("*.styl", ["gulp-stylus"]);
+	gulp.watch("*.js", ["lint"]);
+	gulp.watch(["*.html", '*.js', 'css/*.css']).on('change', browsersync.reload);
+});

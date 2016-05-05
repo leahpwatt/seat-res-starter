@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var seatNum;
 	var selectSeat;
-	var yourName
+	var yourName;
 
 	$(".available").on("click", function(){
 		$(".greyish").show("slow");
