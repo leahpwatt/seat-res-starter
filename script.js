@@ -5,6 +5,7 @@ $(document).ready(function(){
 
 	$(".available").on("click", function(){
 		$(".greyish").show("slow");
+		$('html, body').scrollTop($(document).height());
 		selectSeat = $(this);
 		seatNum = $(this).attr("id");
 		$("#seat").text(seatNum);
